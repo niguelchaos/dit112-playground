@@ -18,6 +18,9 @@ void handleInput() { //handle serial input if there is any
     if (input.startsWith("m")) {
       int throttle = input.substring(1).toInt();
       car.setSpeed(throttle);
+      if(input.startsWith("p")  {
+        Serial.println("bah");
+      }
     }else if (input.startsWith("t")){
       int deg = input.substring(1).toInt();
       car.setAngle(deg);
